@@ -1,0 +1,44 @@
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="https://blog.cobasi.com.br/wp-content/uploads/2020/04/Banho-cachorro-Cao-shampoo.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"> Banho </h5>
+      <p class="card-text">Contamos com excelente serviço de banho, priorizando produtos naturais e sempre buscando o melhor para seu Pet.
+        Nossos profissionais são especializados e tratam todos os animais com muito cuidado e carinho.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://image.cachorrogato.com.br/textimages/tosa-caes-tipos-tosas.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"> Tosa </h5>
+      <p class="card-text">O seu Pet merece o melhor visual. Nossos profissionais estão preparados para trazer 
+        sofisticação e beleza para seu animal, sempre atualizados nos melhores cursos de tosa e corte do mercado.
+      </p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://saude.abril.com.br/wp-content/uploads/2018/03/pet-dentes-katerina-brusnika-istock.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"> Higienização Bucal </h5>
+      <p class="card-text">Mais importante do que o tratamento bucal do seu Pet é a prevenção! Nossos pacotes de higienização
+        bucal farão a manutenção dos dentes do seu animal para que ele possa envelhecer com qualidade de vida.</p>
+    </div>
+  </div>
+</div>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+        <th>Servico</th>
+        <th>Preço</th>
+        <th>Duração</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let serv of servicos">
+      <td>{{ serv.name }}</td>
+      <td>{{ serv.preco }}</td>
+      <td>{{ serv.duracao }}</td>
+    </tr>
+  </tbody>
+</table>
